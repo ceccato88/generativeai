@@ -1,0 +1,67 @@
+{
+  "status": "ok",
+  "data": {
+    "document": {
+      "id": "a1b2c3d4-test--4e5f-b6g7-h8i9j0k1l2m3",
+      "name": "documento_teste.pdf",
+      "package_type": "elite",
+      "ocr_type": "disable",
+      "page_count": 2,
+      "create_time": 1749413256
+    },
+    "elements": [
+      {
+        "type": "paragraph",
+        "text": "1. Análise de Texto e Código",
+        "page": 0,
+        "parent_chapter": -1,
+        "index": 0,
+        "is_chapter_title": true
+      },
+      {
+        "type": "paragraph",
+        "text": "Este é um parágrafo simples para testar a divisão de texto. O sistema deve processá-lo usando o divisor de texto recursivo padrão, quebrando-o em chunks de tamanho gerenciável se necessário.",
+        "page": 0,
+        "parent_chapter": 0,
+        "index": 1,
+        "is_chapter_title": false
+      },
+      {
+        "type": "paragraph",
+        "text": "```python\ndef calcular_media(lista_numeros):\n    \"\"\"Esta função calcula a média de uma lista de números.\"\"\"\n    if not lista_numeros:\n        return 0\n    return sum(lista_numeros) / len(lista_numeros)\n```",
+        "page": 0,
+        "parent_chapter": 0,
+        "index": 2,
+        "is_chapter_title": false
+      },
+      {
+        "type": "paragraph",
+        "text": "2. Seção de Tabelas",
+        "page": 1,
+        "parent_chapter": -1,
+        "index": 3,
+        "is_chapter_title": true
+      },
+      {
+        "type": "table",
+        "text": "Tabela de Vendas Anuais",
+        "page": 1,
+        "parent_chapter": 3,
+        "index": 4,
+        "is_chapter_title": false,
+        "title": "Tabela 1: Vendas Anuais por Produto",
+        "cells": {
+          "0_0": { "text": "Produto" },
+          "0_1": { "text": "Ano" },
+          "0_2": { "text": "Vendas (R$)" },
+          "1_0": { "text": "Produto A" },
+          "1_1": { "text": "2024" },
+          "1_2": { "text": "150,000" },
+          "2_0": { "text": "Produto B" },
+          "2_1": { "text": "2024" },
+          "2_2": { "text": "220,000" }
+        }
+      }
+    ]
+  }
+}
